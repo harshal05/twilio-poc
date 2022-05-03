@@ -1,0 +1,37 @@
+<p>live-chat works!</p>
+
+    
+
+
+<div class="_step_verification">
+
+  <!-- LOGO -->
+  <div id="remote" #remoteVideo class="w-100 text-center" style="height: 100vh;">
+  </div>
+  <div class="w-100" style="position: absolute;top: 0;height: 100vh;">
+    <!-- <div class="text-center">
+      <img [src]="globalConfig.logo" width="300px" class="pt-5">
+    </div> -->
+    <div>
+      <div class="d-flex justify-content-center position-fixed w-100 p-2"
+        style="bottom: 0rem;z-index: 1;background-color: #fff;">
+        <button (click)="connect()">
+          Connect
+        </button>
+        <img *ngIf="twilioService.microphone" title="Mute" class="pr-2" style="opacity: 1;cursor: pointer;"
+          (click)="mute()"  alt="Mute Button" />
+        <img *ngIf="!twilioService.microphone" title="Unmute" class="pr-2" style="opacity: 1;cursor: pointer;"
+          (click)="unmute()"  alt="Unmute Button" />
+        <img title="Disconnect" class="pr-2" style="opacity: 1;cursor: pointer;" (click)="disconnect()"
+          src="assets/disconnect.svg" alt="Disconnect Button" />
+        <!-- <button (click)="mute()">mute</button>
+        <button (click)="unmute()">Unmute</button>
+        <button (click)="disconnect()">Disconnect</button> -->
+      </div>
+      <div id="local" class="position-fixed text-right w-100" #localVideo></div>
+      <input type="text" class="form-control" id="access_tokan"
+       required
+       [(ngModel)]="access_tokan" name="access_tokan">
+    </div>
+  </div>
+</div>

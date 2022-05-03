@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g id="prefix__Group_349" data-name="Group 349" transform="translate(-8831 -5371)">
+        <g id="prefix__Group_342" data-name="Group 342">
+            <g id="prefix__Group_341" data-name="Group 341">
+                <g id="prefix__Group_340" data-name="Group 340" transform="translate(8344 3808)">
+                    <circle id="prefix__Ellipse_359" cx="20" cy="20" r="20" data-name="Ellipse 359" transform="translate(487 1563)" style="fill:rgba(8,8,8,.69)"/>
+                </g>
+                <path id="prefix__Icon_ionic-md-videocam" d="M22.5 11.545V7.577a1.33 1.33 0 0 0-1.459-1.132H3.334a1.33 1.33 0 0 0-1.459 1.132v11.332a1.333 1.333 0 0 0 1.459 1.136h17.707a1.333 1.333 0 0 0 1.459-1.131v-3.969l5.625 4.532V7.014z" data-name="Icon ionic-md-videocam" transform="translate(8836.95 5377.9)" style="fill:#fbfbfb"/>
+            </g>
+        </g>
+    </g>
+</svg>

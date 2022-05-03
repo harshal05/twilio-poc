@@ -1,0 +1,12 @@
+{
+  "NAME_ID":"TWILIO",
+  "name": "Twilio",
+  "subname": "Video",
+
+  "favIcon": "",
+  "logo": "",
+  "loader": "",
+
+  "--primary-color": "#146ddc",
+  "--secondary-color": "#2d2d41"
+}
