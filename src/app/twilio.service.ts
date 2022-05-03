@@ -18,6 +18,7 @@ export class TwilioService {
   msgSubject = new BehaviorSubject('');
   roomObj: any;
   microphone = true;
+  videoTrack = true;
   roomParticipants: any;
   private renderer: Renderer2;
   constructor(
@@ -46,6 +47,20 @@ export class TwilioService {
       audioTrack.track.disable();
     });
     this.microphone = false;
+  }
+
+  hideVideo() {
+    this.roomObj?.localParticipant.videoTracks.forEach((videoTrack: any) => {
+      videoTrack.track.disable();
+    });
+    this.videoTrack = false;
+  }
+
+  unHideVideo() {
+    this.roomObj?.localParticipant.videoTracks.forEach((videoTrack: any) => {
+      videoTrack.track.enable();
+    });
+    this.videoTrack = true;
   }
 
   unmute() {
