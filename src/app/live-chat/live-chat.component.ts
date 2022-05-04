@@ -50,6 +50,7 @@ export class LiveChatComponent implements OnInit, AfterViewInit {
   disconnect() {
     if (this.twilioService.roomObj && this.twilioService.roomObj !== null) {
       this.twilioService.roomObj.disconnect();
+      this.twilioService.previewing = false;
       this.twilioService.roomObj = null;
     } else console.log('thanks');
   }
